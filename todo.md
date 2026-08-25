@@ -1,0 +1,49 @@
+# Project TODO
+
+- [x] Establish an elegant visual system with healthcare-focused typography, colors, spacing, responsive behavior, and accessible contrast.
+- [x] Replace the starter screen with a role-aware healthcare application shell and patient-facing navigation.
+- [x] Provide secure sign-in entry points and clear demo role switching for patient, doctor, and administrator views.
+- [x] Build a searchable doctor directory with specialties, profile details, availability, and appointment-slot selection.
+- [x] Implement a symptom-intake booking flow with pre-visit summary, confirmation, and patient-facing status.
+- [x] Add rescheduling and cancellation experiences that surface occupied slots and doctor leave conflicts.
+- [x] Prevent double booking in the booking interaction and explain conflicts clearly in the interface.
+- [x] Create a patient dashboard for upcoming appointments, follow-up information, prescriptions, and relevant actions.
+- [x] Create a doctor schedule view with appointment details, post-visit notes, prescription entry, and leave indicators.
+- [x] Create an administrator oversight view for appointments, doctors, system status, and scheduling signals.
+- [x] Add appropriate database models, server procedures, and conflict-aware booking logic for core flows.
+- [x] Add unit tests for appointment conflict detection and key booking workflow behavior.
+- [x] Verify desktop and mobile presentation, resolve visual issues, and create the final project checkpoint.
+- [x] Conduct a read-only audit against the Healthcare Appointment & Follow-up Manager assignment, identifying mocked, incomplete, hardcoded, and non-functional requirements without changing application code.
+- [x] Phase 1: enforce authenticated patient, doctor, and administrator access boundaries in persisted application workflows.
+- [x] Phase 1: add persisted clinician profiles, working hours, leave records, and validated appointment status transitions.
+- [x] Phase 1: implement transactional, concurrency-safe booking and rescheduling that blocks patient, clinician, and leave conflicts.
+- [x] Phase 1: expose role-gated APIs for clinician discovery, availability, appointments, leaves, and status management.
+- [x] Phase 1: connect existing booking, patient, doctor, and administrator UI actions to real persisted APIs without redesigning the visual system.
+- [x] Phase 1: test authorization, persistence, availability, leave, overlap, concurrent booking, reschedule, cancellation, and status workflows; report verified scope and remaining limitations.
+- [x] Phase 2: define and persist validated pre-visit clinician summaries with transparent non-diagnostic AI disclosure and fallback state.
+- [x] Phase 2: define and persist validated patient-friendly post-visit summaries with transparent non-diagnostic AI disclosure and fallback state.
+- [x] Phase 2: configure server-only model access, document environment variables, and prevent frontend API-key exposure.
+- [x] Phase 2: implement AI generation routes with schema validation, error handling, durable status metadata, and useful non-AI fallbacks.
+- [x] Phase 2: connect summary states to the existing patient and doctor interfaces without redesigning Phase 1 workflows.
+- [x] Phase 2: test generation validation, unavailable-model fallback, persistence, and the existing Phase 1 booking flow; report verified scope and remaining limitations.
+- [x] Add persisted, non-sensitive demo identities for administrator, clinician, and patient roles without bypassing server authentication or database role checks.
+- [x] Connect the existing sign-in screen to secure demo credential authentication while retaining the OAuth sign-in option.
+- [x] Display each authenticated demo user’s persisted name and role in the appropriate existing workspace.
+- [x] Document safe demo credentials and verify role enforcement, credential rejection, session behavior, and role-specific UI access.
+- [x] Display each authenticated demo user’s full persisted name beside the server-derived role indicator and verify it for administrator, doctor, and patient sessions.
+- [x] Add a visible, secure logout action that invokes the existing server session-clearing endpoint and returns users to the sign-in state.
+- [x] Add a development-only authenticated demo account switcher that reuses credential validation and standard signed session issuance for each demo role.
+- [x] Verify logout cookie invalidation, unauthenticated protected-route rejection, account switching, and preservation of role-specific workspace access.
+- [x] Implement server-side Google Calendar OAuth, encrypted token persistence, appointment event synchronization, and a transparent development fallback.
+- [x] Implement server-side appointment email notification records, provider-backed delivery when configured, and explicit unavailable-provider fallbacks.
+- [x] Add persisted medication reminders with patient-owned CRUD APIs, validation, patient dashboard management, and due-reminder processing.
+- [x] Wire calendar, notification, and reminder states into existing appointment and patient workflows without redesigning the UI.
+- [x] Verify production build, database schema/configuration, secret hygiene, managed environment documentation, role-based end-to-end workflows, and all newly added functionality.
+- [x] Finalize README architecture, setup, features, demo accounts, environment requirements, testing steps, deployment notes, and known limitations.
+- [x] Ensure Google Calendar and email integrations remain explicitly unavailable, non-simulated, and database-audited until managed credentials are configured; document the exact activation requirements.
+- [x] Future activation deferred at the user’s request: managed Google Calendar and Resend credentials, publication, scheduled medication callback configuration, and isolated live-provider staging tests remain required before any external delivery is claimed.
+- [x] Prepare a complete GitHub-safe source export for the healthcare_appointment repository, covering client, server, database schema, documentation, README, and safe configuration templates.
+- [x] Audit the submission package for secrets, managed credentials, generated artifacts, and omitted required files before delivery.
+- [x] Provide the clean export package and precise GitHub upload instructions without exposing any real credentials.
+- [ ] Rebuild the GitHub archive without the empty platform-local .manus directory and verify the final package exclusions.
+- [ ] Deliver the GitHub-safe ZIP and checksum to the user with the exact upload instructions for healthcare_appointment.
